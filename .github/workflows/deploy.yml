@@ -1,0 +1,37 @@
+name: Deploy React App
+
+# The event that triggers the workflow
+on:
+  push:
+    branches:
+      - main  # Triggers the workflow when code is pushed to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # The OS that will run the job
+
+    steps:
+      # Check out the repository's code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js to build the React app
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # Use the Node.js version needed by your project
+
+      # Install project dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Build the React app
+      - name: Build the project
+        run: npm run build
+
+      # Deploy to Netlify (example for Netlify)
+      - name: Deploy to Netlify
+        run: npx netlify deploy --prod --dir=build --auth=$NETLIFY_AUTH_TOKEN --site=$NETLIFY_SITE_ID
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
