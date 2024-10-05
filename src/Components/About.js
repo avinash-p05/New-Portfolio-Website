@@ -10,15 +10,10 @@ const About = () => {
       <div className='AboutPage'>
         <div className='AboutText'>
           <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
-          <p>
-          I have also participated and compititions in various <b>Hackathons</b> to name few 
-          – Winning <b>Tantradnya 2022</b> for finding the smart solution to control pollution, 
-          Winning <b>Hack to Future</b> a 24 hrs hackathon for managing the surplus food effectively and many more.. <br/><br/>
-          
-            I love to create original projects with beautiful designs, you can check out some of my work in the projects section.<br/><br/>
-            I am <b>open</b> to new collaborations or work where I can contribute and grow. Feel free to connect with me, links are in the footer.<br/>
-            Apart from coding I love to do <b>Ui/Ux Designing</b>.
-          </p>
+          <p> I have also participated in various <b>Hackathons</b>, including: - Winning <b>Tantradnya 2022</b> for developing a smart solution to control pollution. - Winning <b>Hack to Future</b>, a 24-hour hackathon, for effectively managing surplus food. <br/><br/>
+I enjoy creating original projects with beautiful designs. You can check out some of my work in the projects section.<br/><br/> I am <b>open</b> to new collaborations or opportunities where I can contribute and grow. Feel free to connect with me—links are in the footer.<br/><br/> Besides coding, I have a passion for <b>UI/UX Design</b>.
+
+</p>
         </div>
 
         <div>
