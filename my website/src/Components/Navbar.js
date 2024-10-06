@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {AiOutlineHome} from "react-icons/ai";
-import {BsPerson, BsCodeSlash} from "react-icons/bs";
+import {BsPerson, BsCodeSlash, BsTrophy} from "react-icons/bs";
 import {CgFileDocument} from "react-icons/cg";
 
 
@@ -53,7 +53,8 @@ const Nav = () => {
         <ul className='NavbarLinks'>
             <li onClick={hideMenu}><Link to="/"><AiOutlineHome/> Home</Link></li>
             <li onClick={hideMenu}><Link to="/About"><BsPerson/> About</Link></li>
-            <li onClick={hideMenu}><Link to="/Project"><BsCodeSlash/> Project</Link></li>
+            <li onClick={hideMenu}><Link to="/Achievement"><BsTrophy/>Achievements</Link></li>
+            <li onClick={hideMenu}><Link to="/Project"><BsCodeSlash/> Projects</Link></li>
             <li onClick={hideMenu}><Link to="/Resume"><CgFileDocument/> Resume</Link></li>
         </ul>
         

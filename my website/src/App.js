@@ -10,6 +10,7 @@ import MoveToTop from "./Components/MoveToTop";
 import Lottie from  "lottie-react";
 import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
+import Achievements from "./Components/Achievements";
 
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/About" element={<About/>}/>
         <Route path="/Project" element={<Project/>}/>
+        <Route path="/Achievement" element={<Achievements/>}/>
         <Route path="/Resume" element={<Resume/>}/>
       </Routes>
       

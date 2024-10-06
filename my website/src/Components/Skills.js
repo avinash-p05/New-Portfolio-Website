@@ -1,8 +1,7 @@
 import React from 'react'; 
 import { CgCPlusPlus } from "react-icons/cg";
 import {FaJava, FaGitAlt, FaGithub, FaFigma,FaAndroid,FaLinux} from "react-icons/fa";
-import {DiNodejs, DiJavascript1} from "react-icons/di";
-import {SiAndroid, SiExpress, SiMongodb, SiPostman, SiRender, SiSpringboot, SiMysql,SiFirebase} from "react-icons/si";
+import {SiMongodb, SiPostman, SiRender, SiSpringboot, SiMysql,SiFirebase} from "react-icons/si";
 
 const Skills = ({skill}) => {
     const icon = {
