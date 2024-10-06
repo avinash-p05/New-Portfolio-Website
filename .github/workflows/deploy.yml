@@ -39,6 +39,6 @@ jobs:
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
       - name: Deploy to Netlify
-        run: netlify deploy --prod --dir=ci-cd-app/build --site=${{ secrets.NETLIFY_SITE_ID }}
+        run: netlify deploy --prod --dir=my website/build --site=${{ secrets.NETLIFY_SITE_ID }}
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
