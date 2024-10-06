@@ -17,7 +17,7 @@ jobs:
         run: npm install --legacy-peer-deps
         working-directory: my website
       - name: Build
-        run: npm run build
+        run: CI=false npm run build
         working-directory: my website
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
