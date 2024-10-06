@@ -15,15 +15,15 @@ jobs:
           node-version: '18'
       - name: Install dependencies
         run: npm install --legacy-peer-deps
-        working-directory: my website
+        working-directory: my-website
       - name: Build
         run: CI=false npm run build
-        working-directory: my website
+        working-directory: my-website
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: my website/build
+          path: my-website/build
 
   deploy:
     runs-on: ubuntu-latest
@@ -35,10 +35,10 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: my website/build
+          path: my-website/build
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
       - name: Deploy to Netlify
-        run: netlify deploy --prod --dir=my website/build --site=${{ secrets.NETLIFY_SITE_ID }}
+        run: netlify deploy --prod --dir=my-website/build --site=${{ secrets.NETLIFY_SITE_ID }}
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
