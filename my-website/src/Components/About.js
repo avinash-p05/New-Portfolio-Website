@@ -2,7 +2,7 @@ import React from 'react';
 import Skills from './Skills.js';
 import Tilt from 'react-parallax-tilt';
 import Lottie from "lottie-react"
-import Coder from '../LottieFiles/coder.json';
+import Coder from '../LottieFiles/globe.json';
 
 const About = () => {
   return (
@@ -33,18 +33,22 @@ I enjoy creating original projects with beautiful designs. You can check out som
         
         <Skills skill='Android' />
         <Skills skill='SpringBoot' />
+          <Skills skill='ReactNative'/>
         <Skills skill='MySql' />
         <Skills skill='Mongo' />
         <Skills skill='Git' />
         <Skills skill='Github' />
         <Skills skill='Java' />
+          <Skills skill='Jetpack'/>
+          <Skills skill='Kotlin'/>
+          <Skills skill='React'/>
         <Skills skill='C' />
         <Skills skill='Postman' />
         <Skills skill='Figma' />
         <Skills skill='Firebase' />
         <Skills skill='Render' />
         <Skills skill='Linux'/>
-        
+
       </div>
     </>
   )

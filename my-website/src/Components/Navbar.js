@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {AiOutlineHome} from "react-icons/ai";
-import {BsPerson, BsCodeSlash, BsTrophy} from "react-icons/bs";
+import {BsPerson, BsCodeSlash, BsTrophy, BsSpeaker, BsFillEnvelopeFill} from "react-icons/bs";
 import {CgFileDocument} from "react-icons/cg";
 
 
@@ -40,7 +40,7 @@ const Nav = () => {
     window.addEventListener("scroll", scrollHandler);
 
   return (
-    <nav className={navbarblur? 'Navbar blur':'Navbar'}> 
+    <nav className={navbarblur? 'Navbar':'Navbar'}>
  
         <h1 title='Reload' onClick={()=>window.location.reload(true)} className='Logo'>AP</h1>
 
@@ -56,8 +56,9 @@ const Nav = () => {
             <li onClick={hideMenu}><Link to="/Achievement"><BsTrophy/>Achievements</Link></li>
             <li onClick={hideMenu}><Link to="/Project"><BsCodeSlash/> Projects</Link></li>
             <li onClick={hideMenu}><Link to="/Resume"><CgFileDocument/> Resume</Link></li>
+            <li onClick={hideMenu}><Link to="/Contact"><BsFillEnvelopeFill/> Contact</Link></li>
         </ul>
-        
+
     </nav>
   )
 }

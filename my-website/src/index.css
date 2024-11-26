@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   margin: 0;
   padding: 0;
@@ -5,6 +9,9 @@
 }
 
 #root{
+  --light: #d0d1d3;
+  --dark: #040d14;
+  --green: #19f5af;
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
@@ -229,8 +236,8 @@ b{
 }
 
 .illustration{
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
 }
 
 @media(max-width:900px){
@@ -266,8 +273,8 @@ b{
     font-size: 24px;
   }
   .illustration{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin-bottom: 0px;
   }
 }
@@ -325,6 +332,9 @@ b{
   }
 
   .Avatar{
+    display: flex;
+    align-content: center;
+    justify-content: center;
     width: 200px;
     margin-bottom: 75px;
   }
@@ -556,4 +566,5 @@ footer h4{
   transform: scale(1.05);
   box-shadow: 0 4px 10px 0 #19f5af;
 }
+
 
